@@ -8,7 +8,7 @@ const theme = "mathematiques-casino";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Mathématiques du Casino : Probabilités et Avantage Maison",
+  title: "Mathématiques du Casino : Guide",
   description:
     "Décryptez les mathématiques du casino : avantage de la maison, probabilités des jeux et fonctionnement du RNG. Comprenez les chiffres derrière le hasard.",
   alternates: {

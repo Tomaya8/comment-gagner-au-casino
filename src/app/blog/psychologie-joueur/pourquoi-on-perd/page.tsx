@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Pourquoi On Perd au Casino : Analyse Psychologique Complète",
+  title: "Pourquoi On Perd au Casino",
   description:
-    "Comprendre les mécanismes psychologiques qui font perdre au casino. Avantage maison, biais cognitifs, émotions, design des jeux et comportements destructeurs analysés en profondeur.",
+    "Les mécanismes psychologiques qui font perdre au casino : avantage maison, biais cognitifs, émotions et design des jeux analysés.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/psychologie-joueur/pourquoi-on-perd",
@@ -45,6 +47,12 @@ const faqItems = [
 export default function PourquoiOnPerdPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Pourquoi On Perd au Casino : Analyse Psychologique Complète"
+        description="Comprendre les mécanismes psychologiques qui font perdre au casino. Avantage maison, biais cognitifs, émotions, design des jeux et comportements destructeurs analysés en profondeur."
+        url="/blog/psychologie-joueur/pourquoi-on-perd"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -61,7 +69,7 @@ export default function PourquoiOnPerdPage() {
         gradient={getThemeStyle("psychologie-joueur").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           La question n&apos;est pas &quot;comment gagner au casino&quot; mais plutôt
           &quot;pourquoi perd-on au casino ?&quot;. La réponse combine des mathématiques
@@ -294,6 +302,8 @@ export default function PourquoiOnPerdPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-pourquoi-on-perd" />
+
+      <ArticleCTA />
     </div>
   );
 }

@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Gestion du Budget aux Machines à Sous : Guide Complet",
+  title: "Budget Machines à Sous : Guide",
   description:
-    "Apprenez à gérer votre budget aux machines à sous. Bankroll management, taille des mises, limites de session, choix de la volatilité et discipline pour un jeu responsable et durable.",
+    "Gérer votre budget aux machines à sous : bankroll management, taille des mises, limites de session et discipline pour un jeu responsable.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/machines-a-sous/gestion-budget-slots",
@@ -45,6 +47,12 @@ const faqItems = [
 export default function GestionBudgetSlotsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Gestion du Budget aux Machines à Sous : Guide Complet"
+        description="Apprenez à gérer votre budget aux machines à sous. Bankroll management, taille des mises, limites de session, choix de la volatilité et discipline pour un jeu responsable et durable."
+        url="/blog/machines-a-sous/gestion-budget-slots"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -61,7 +69,7 @@ export default function GestionBudgetSlotsPage() {
         gradient={getThemeStyle("machines-a-sous").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Les{" "}
           <Link href="/jeux/machines-a-sous">machines à sous</Link> sont conçues pour être
@@ -339,6 +347,8 @@ export default function GestionBudgetSlotsPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-budget-slots" />
+
+      <ArticleCTA />
     </div>
   );
 }

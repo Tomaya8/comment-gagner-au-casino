@@ -8,7 +8,7 @@ const theme = "mythes-casino";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Mythes du Casino : Croyances Populaires Démystifiées",
+  title: "Mythes du Casino Démystifiés",
   description:
     "Démystifiez les croyances populaires sur le casino : peut-on battre la maison ? Les fausses stratégies et les idées reçues passées au crible.",
   alternates: {

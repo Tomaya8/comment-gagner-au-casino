@@ -3,6 +3,8 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
   title: "10 Idees Recues sur les Casinos",
@@ -44,6 +46,12 @@ const faqItems = [
 export default function IdeesRecuesCasino() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="10 Idees Recues sur les Casinos"
+        description="Demystifiez les 10 idees recues les plus repandues sur les casinos. Machines truquees, heures de gain, stratégies secretes : découvrez la verite."
+        url="/blog/mythes-casino/idees-recues-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -272,6 +280,8 @@ export default function IdeesRecuesCasino() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

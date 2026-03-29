@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "La Martingale : Fonctionne-t-elle Vraiment ? Analyse Mathématique",
+  title: "La Martingale Fonctionne-t-elle ?",
   description:
-    "Analyse complète de la stratégie de la martingale à la roulette. Découvrez pourquoi cette méthode de mise séduit tant de joueurs, ses limites mathématiques, et les alternatives plus efficaces pour gérer votre bankroll.",
+    "Analyse de la martingale à la roulette. Pourquoi cette méthode séduit, ses limites mathématiques et les alternatives pour gérer votre bankroll.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/strategie-roulette/martingale-fonctionne-t-elle",
@@ -50,6 +52,12 @@ const faqItems = [
 export default function MartingalePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="La Martingale : Fonctionne-t-elle Vraiment ? Analyse Mathématique"
+        description="Analyse complète de la stratégie de la martingale à la roulette. Découvrez pourquoi cette méthode de mise séduit tant de joueurs, ses limites mathématiques, et les alternatives plus efficaces pour gérer votre bankroll."
+        url="/blog/strategie-roulette/martingale-fonctionne-t-elle"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -66,7 +74,7 @@ export default function MartingalePage() {
         gradient={getThemeStyle("strategie-roulette").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           La martingale est probablement la stratégie de casino la plus connue au monde.
           Doubler sa mise après chaque perte pour récupérer ses pertes semble logique sur le
@@ -307,6 +315,8 @@ export default function MartingalePage() {
       </article>
 
       <FAQ items={faqItems} id="faq-martingale" />
+
+      <ArticleCTA />
     </div>
   );
 }

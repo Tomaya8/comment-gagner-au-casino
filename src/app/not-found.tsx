@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Page Non Trouvée",
+  robots: { index: false, follow: true },
 };
 
 export default function NotFound() {

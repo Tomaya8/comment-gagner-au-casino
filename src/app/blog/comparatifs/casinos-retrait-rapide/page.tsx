@@ -4,11 +4,13 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
   title: "Casinos avec Retraits Rapides",
   description:
-    "Comparatif des casinos en ligne avec les retraits les plus rapides. Délais par méthode de paiement, vérification KYC et astuces pour retirer vos gains rapidement.",
+    "Comparatif des casinos en ligne avec les retraits les plus rapides. Délais par méthode de paiement, KYC et astuces pour retirer vos gains vite.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog/comparatifs/casinos-retrait-rapide",
   },
@@ -45,6 +47,12 @@ const faqItems = [
 export default function CasinosRetraitRapide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Casinos avec Retraits Rapides"
+        description="Comparatif des casinos en ligne avec les retraits les plus rapides. Délais par méthode de paiement, vérification KYC et astuces pour retirer vos gains rapidement."
+        url="/blog/comparatifs/casinos-retrait-rapide"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -243,6 +251,8 @@ export default function CasinosRetraitRapide() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

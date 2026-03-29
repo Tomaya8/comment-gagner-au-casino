@@ -8,7 +8,7 @@ const theme = "psychologie-joueur";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Psychologie du Joueur : Biais Cognitifs et Gestion des Émotions",
+  title: "Psychologie du Joueur : Guide",
   description:
     "Comprenez les mécanismes psychologiques du jeu : biais cognitifs, gestion émotionnelle et raisons des pertes. Jouez en toute conscience.",
   alternates: {

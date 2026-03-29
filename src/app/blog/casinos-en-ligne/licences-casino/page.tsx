@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Les Licences de Casino en Ligne : Guide Complet",
+  title: "Licences de Casino en Ligne",
   description:
-    "Tout savoir sur les licences de casino en ligne : MGA, Curacao, UKGC, Gibraltar. Comment vérifiér une licence et comprendre la protection qu'elle offre aux joueurs.",
+    "Les licences de casino en ligne : MGA, Curacao, UKGC, Gibraltar. Comment vérifier une licence et la protection qu'elle offre aux joueurs.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog/casinos-en-ligne/licences-casino",
   },
@@ -44,6 +46,12 @@ const faqItems = [
 export default function LicencesCasino() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Les Licences de Casino en Ligne : Guide Complet"
+        description="Tout savoir sur les licences de casino en ligne : MGA, Curacao, UKGC, Gibraltar. Comment vérifiér une licence et comprendre la protection qu'elle offre aux joueurs."
+        url="/blog/casinos-en-ligne/licences-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -281,6 +289,8 @@ export default function LicencesCasino() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

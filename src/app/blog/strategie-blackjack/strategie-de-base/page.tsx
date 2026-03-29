@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Stratégie de Base au Blackjack Expliquée : Guide Complet",
+  title: "Stratégie de Base au Blackjack",
   description:
-    "Maîtrisez la stratégie de base au blackjack. Tableau complet des décisions optimales, explication mathématique, RTP de 99,5 % et conseils pour réduire l'avantage maison au minimum.",
+    "Stratégie de base au blackjack : tableau des décisions optimales, explication mathématique, RTP de 99,5 % et conseils pour réduire l'avantage maison.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/strategie-blackjack/strategie-de-base",
@@ -50,6 +52,12 @@ const faqItems = [
 export default function StrategieDeBasePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Stratégie de Base au Blackjack Expliquée : Guide Complet"
+        description="Maîtrisez la stratégie de base au blackjack. Tableau complet des décisions optimales, explication mathématique, RTP de 99,5 % et conseils pour réduire l'avantage maison au minimum."
+        url="/blog/strategie-blackjack/strategie-de-base"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -66,7 +74,7 @@ export default function StrategieDeBasePage() {
         gradient={getThemeStyle("strategie-blackjack").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           La stratégie de base au blackjack est le système de jeu le plus puissant que vous
           puissiez utiliser légalement dans un casino. Développée grâce aux mathématiques et
@@ -303,6 +311,8 @@ export default function StrategieDeBasePage() {
       </article>
 
       <FAQ items={faqItems} id="faq-strategie-base" />
+
+      <ArticleCTA />
     </div>
   );
 }

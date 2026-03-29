@@ -4,9 +4,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Microgaming – Avis, Meilleurs Jeux et RTP du Fournisseur",
+  title: "Microgaming : Avis, Jeux et RTP",
   description:
-    "Guide complet sur Microgaming : histoire depuis 1994, catalogue de 800+ jeux, RTP moyen de 96,1 %, jackpots Mega Moolah, forces et faiblesses du doyen de l'industrie.",
+    "Guide Microgaming : histoire, 800+ jeux, RTP moyen de 96,1 %, jackpots Mega Moolah, forces et faiblesses du doyen de l'industrie.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/fournisseurs/microgaming",
   },

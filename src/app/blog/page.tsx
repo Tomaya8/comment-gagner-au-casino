@@ -4,9 +4,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { BlogCard, ThemeHeader, getThemeStyle } from "@/components/BlogHero";
 
 export const metadata: Metadata = {
-  title: "Blog Casino : Guides, Stratégies et Conseils",
+  title: "Blog Casino : Guides et Astuces",
   description:
-    "Explorez nos guides complets sur le casino : stratégies, mythes, bonus, comparatifs, guides débutants et bien plus. Articles détaillés pour jouer intelligemment.",
+    "Guides complets sur le casino : stratégies, mythes, bonus, comparatifs et conseils débutants. Articles pour jouer intelligemment.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog",
   },

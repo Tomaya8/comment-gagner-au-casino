@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Comment Choisir un Casino en Ligne Fiable",
+  title: "Choisir un Casino en Ligne Fiable",
   description:
-    "Guide complet pour identifiér un casino en ligne fiable et securise. Licences, avis joueurs, méthodes de paiement, support client et critères essentiels a vérifiér.",
+    "Comment identifier un casino en ligne fiable : licences, avis joueurs, méthodes de paiement, support client et critères essentiels.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog/casinos-en-ligne/choisir-casino-fiable",
   },
@@ -44,6 +46,12 @@ const faqItems = [
 export default function ChoisirCasinoFiable() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Comment Choisir un Casino en Ligne Fiable"
+        description="Guide complet pour identifiér un casino en ligne fiable et securise. Licences, avis joueurs, méthodes de paiement, support client et critères essentiels a vérifiér."
+        url="/blog/casinos-en-ligne/choisir-casino-fiable"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -309,6 +317,8 @@ export default function ChoisirCasinoFiable() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

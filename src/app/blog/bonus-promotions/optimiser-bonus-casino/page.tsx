@@ -3,9 +3,11 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Comment Optimiser les Bonus de Casino",
+  title: "Optimiser les Bonus de Casino",
   description:
     "Stratégies pour tirer le maximum des bonus de casino en ligne. Choix des jeux, gestion du wagering, timing et conseils pratiques pour optimiser chaque offre.",
   alternates: {
@@ -44,6 +46,12 @@ const faqItems = [
 export default function OptimiserBonusCasino() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Comment Optimiser les Bonus de Casino"
+        description="Stratégies pour tirer le maximum des bonus de casino en ligne. Choix des jeux, gestion du wagering, timing et conseils pratiques pour optimiser chaque offre."
+        url="/blog/bonus-promotions/optimiser-bonus-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -297,6 +305,8 @@ export default function OptimiserBonusCasino() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

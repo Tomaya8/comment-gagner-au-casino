@@ -5,9 +5,9 @@ import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
 
 export const metadata: Metadata = {
-  title: "Blackjack : Stratégie de Base, Règles et Probabilités",
+  title: "Blackjack : Stratégie et Règles",
   description:
-    "Guide complet du blackjack : stratégie de base en tableau, comptage de cartes (mythe vs réalité), règles de split et double, assurance, RTP et gestion de bankroll.",
+    "Guide du blackjack : stratégie de base, comptage de cartes, règles de split et double, assurance, RTP et gestion de bankroll.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/jeux/blackjack",
   },

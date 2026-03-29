@@ -4,11 +4,13 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Les Casinos avec le Meilleur RTP",
+  title: "Casinos avec le Meilleur RTP",
   description:
-    "Découvrez les casinos en ligne avec les taux de redistribution (RTP) les plus élevés. Comparatif des meilleurs RTP par jeu et par casino pour maximiser vos chances.",
+    "Casinos en ligne avec les RTP les plus élevés. Comparatif des meilleurs taux de redistribution par jeu et par casino pour maximiser vos chances.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog/comparatifs/casinos-rtp-eleve",
   },
@@ -45,6 +47,12 @@ const faqItems = [
 export default function CasinosRtpÉlevé() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Les Casinos avec le Meilleur RTP"
+        description="Découvrez les casinos en ligne avec les taux de redistribution (RTP) les plus élevés. Comparatif des meilleurs RTP par jeu et par casino pour maximiser vos chances."
+        url="/blog/comparatifs/casinos-rtp-eleve"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -300,6 +308,8 @@ export default function CasinosRtpÉlevé() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

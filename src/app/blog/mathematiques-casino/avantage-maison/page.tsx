@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "L'Avantage de la Maison Expliqué : Comprendre le House Edge",
+  title: "L'Avantage Maison Expliqué",
   description:
-    "Explication complète de l'avantage de la maison (house edge) au casino. Calcul, impact par jeu, espérance mathématique et pourquoi le casino gagne toujours à long terme.",
+    "L'avantage de la maison (house edge) au casino : calcul, impact par jeu, espérance mathématique et pourquoi le casino gagne à long terme.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/mathematiques-casino/avantage-maison",
@@ -45,6 +47,12 @@ const faqItems = [
 export default function AvantageMaisonPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="L'Avantage de la Maison Expliqué : Comprendre le House Edge"
+        description="Explication complète de l'avantage de la maison (house edge) au casino. Calcul, impact par jeu, espérance mathématique et pourquoi le casino gagne toujours à long terme."
+        url="/blog/mathematiques-casino/avantage-maison"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -61,7 +69,7 @@ export default function AvantageMaisonPage() {
         gradient={getThemeStyle("mathematiques-casino").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           L&apos;avantage de la maison, ou &quot;house edge&quot;, est le concept le plus
           important à comprendre pour tout joueur de casino. C&apos;est la raison mathématique
@@ -298,6 +306,8 @@ export default function AvantageMaisonPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-avantage-maison" />
+
+      <ArticleCTA />
     </div>
   );
 }

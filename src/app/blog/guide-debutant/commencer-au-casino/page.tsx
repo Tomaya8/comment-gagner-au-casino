@@ -3,9 +3,11 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Comment Commencer au Casino : Guide du Débutant",
+  title: "Commencer au Casino : Guide",
   description:
     "Guide complet pour débuter au casino en ligne ou terrestre. Conseils pratiques, choix des jeux, gestion du budget et erreurs a éviter pour les nouveaux joueurs.",
   alternates: {
@@ -49,6 +51,12 @@ const faqItems = [
 export default function CommencerAuCasino() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Comment Commencer au Casino : Guide du Débutant"
+        description="Guide complet pour débuter au casino en ligne ou terrestre. Conseils pratiques, choix des jeux, gestion du budget et erreurs a éviter pour les nouveaux joueurs."
+        url="/blog/guide-debutant/commencer-au-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -329,6 +337,8 @@ export default function CommencerAuCasino() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

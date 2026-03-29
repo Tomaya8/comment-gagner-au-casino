@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Probabilités des Jeux de Casino : Guide Mathématique Complet",
+  title: "Probabilités des Jeux de Casino",
   description:
-    "Comprendre les probabilités de tous les jeux de casino : roulette, blackjack, machines à sous, baccarat et poker. Calculs détaillés, espérance mathématique et comparaisons pour jouer en connaissance de cause.",
+    "Probabilités de tous les jeux de casino : roulette, blackjack, machines à sous, baccarat et poker. Calculs détaillés et espérance mathématique.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/mathematiques-casino/probabilites-jeux-casino",
@@ -45,6 +47,12 @@ const faqItems = [
 export default function ProbabilitesJeuxCasinoPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Probabilités des Jeux de Casino : Guide Mathématique Complet"
+        description="Comprendre les probabilités de tous les jeux de casino : roulette, blackjack, machines à sous, baccarat et poker. Calculs détaillés, espérance mathématique et comparaisons pour jouer en connaissance de cause."
+        url="/blog/mathematiques-casino/probabilites-jeux-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -61,7 +69,7 @@ export default function ProbabilitesJeuxCasinoPage() {
         gradient={getThemeStyle("mathematiques-casino").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Les probabilités sont le langage fondamental du casino. Chaque jeu, chaque pari,
           chaque tour est gouverné par des mathématiques précises. Comprendre ces probabilités
@@ -331,6 +339,8 @@ export default function ProbabilitesJeuxCasinoPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-probabilites" />
+
+      <ArticleCTA />
     </div>
   );
 }

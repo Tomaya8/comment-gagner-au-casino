@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Les Jeux de Casino les Plus Faciles pour Débuter",
+  title: "Jeux Faciles pour Débuter",
   description:
-    "Découvrez les jeux de casino les plus accessibles pour les débutants. Roulette, machines a sous, baccarat : règles simples, bonnes probabilites et plaisir garanti.",
+    "Les jeux de casino les plus accessibles pour les débutants : roulette, machines à sous, baccarat. Règles simples et bonnes probabilités.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog/guide-debutant/jeux-faciles-casino",
   },
@@ -49,6 +51,12 @@ const faqItems = [
 export default function JeuxFacilesCasino() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Les Jeux de Casino les Plus Faciles pour Débuter"
+        description="Découvrez les jeux de casino les plus accessibles pour les débutants. Roulette, machines a sous, baccarat : règles simples, bonnes probabilites et plaisir garanti."
+        url="/blog/guide-debutant/jeux-faciles-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -303,6 +311,8 @@ export default function JeuxFacilesCasino() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

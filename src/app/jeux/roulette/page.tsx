@@ -5,9 +5,9 @@ import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
 
 export const metadata: Metadata = {
-  title: "Roulette : Règles, Probabilités et Stratégies Complètes",
+  title: "Roulette : Règles et Stratégies",
   description:
-    "Guide complet de la roulette : européenne vs américaine, probabilités par type de mise, analyse de la martingale, RTP et stratégies pour limiter vos pertes. Tout savoir avant de jouer.",
+    "Guide de la roulette : européenne vs américaine, probabilités par mise, martingale, RTP et stratégies pour limiter vos pertes.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/jeux/roulette",
   },

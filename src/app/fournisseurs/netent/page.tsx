@@ -4,9 +4,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "NetEnt – Avis, Meilleurs Jeux et RTP du Fournisseur",
+  title: "NetEnt : Avis, Jeux et RTP",
   description:
-    "Guide complet sur NetEnt : histoire, catalogue de jeux, RTP moyen de 96,4 %, meilleures machines à sous (Starburst, Gonzo's Quest, Dead or Alive). Forces, faiblesses et innovations.",
+    "Guide NetEnt : catalogue de jeux, RTP moyen de 96,4 %, meilleures slots (Starburst, Gonzo's Quest, Dead or Alive). Forces et faiblesses.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/fournisseurs/netent",
   },

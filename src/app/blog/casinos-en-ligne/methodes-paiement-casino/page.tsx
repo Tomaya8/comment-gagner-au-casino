@@ -3,9 +3,11 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Méthodes de Paiement au Casino en Ligne",
+  title: "Paiements au Casino en Ligne",
   description:
     "Guide complet des méthodes de paiement au casino en ligne : carte bancaire, portefeuille electronique, virement, crypto. Frais, délais et sécurité compares.",
   alternates: {
@@ -44,6 +46,12 @@ const faqItems = [
 export default function MéthodesPaiementCasino() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Méthodes de Paiement au Casino en Ligne"
+        description="Guide complet des méthodes de paiement au casino en ligne : carte bancaire, portefeuille electronique, virement, crypto. Frais, délais et sécurité compares."
+        url="/blog/casinos-en-ligne/methodes-paiement-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -296,6 +304,8 @@ export default function MéthodesPaiementCasino() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

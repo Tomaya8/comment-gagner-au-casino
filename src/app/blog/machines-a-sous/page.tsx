@@ -8,7 +8,7 @@ const theme = "machines-a-sous";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Machines à Sous : RTP, Volatilité et Gestion de Budget",
+  title: "Machines à Sous : RTP et Guides",
   description:
     "Tout comprendre sur les machines à sous : RTP, volatilité, chances de gains et gestion du budget. Guides honnêtes basés sur les faits.",
   alternates: {

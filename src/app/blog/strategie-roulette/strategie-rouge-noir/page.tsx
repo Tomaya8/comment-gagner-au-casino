@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Stratégie Rouge/Noir à la Roulette : Analyse Complète",
+  title: "Stratégie Rouge/Noir Roulette",
   description:
-    "Analyse détaillée de la stratégie rouge/noir à la roulette. Probabilités, systèmes de mise, avantage maison et conseils pratiques pour optimiser vos chances sur les paris simples.",
+    "Analyse de la stratégie rouge/noir à la roulette. Probabilités, systèmes de mise, avantage maison et conseils pour les paris simples.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/strategie-roulette/strategie-rouge-noir",
@@ -50,6 +52,12 @@ const faqItems = [
 export default function StrategieRougeNoirPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Stratégie Rouge/Noir à la Roulette : Analyse Complète"
+        description="Analyse détaillée de la stratégie rouge/noir à la roulette. Probabilités, systèmes de mise, avantage maison et conseils pratiques pour optimiser vos chances sur les paris simples."
+        url="/blog/strategie-roulette/strategie-rouge-noir"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -66,7 +74,7 @@ export default function StrategieRougeNoirPage() {
         gradient={getThemeStyle("strategie-roulette").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Le pari rouge/noir est le choix le plus populaire à la roulette. Avec une probabilité
           proche de 50 %, il semble offrir les meilleures chances de gain. Mais quels systèmes
@@ -302,6 +310,8 @@ export default function StrategieRougeNoirPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-rouge-noir" />
+
+      <ArticleCTA />
     </div>
   );
 }

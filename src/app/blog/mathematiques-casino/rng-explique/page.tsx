@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Le RNG (Générateur de Nombres Aléatoires) Expliqué",
+  title: "Le RNG des Casinos Expliqué",
   description:
-    "Comprendre le RNG des casinos en ligne. Fonctionnement technique, certification, impact sur l'équité des jeux, PRNG vs TRNG et pourquoi aucune stratégie ne peut le battre.",
+    "Le RNG des casinos en ligne : fonctionnement, certification, PRNG vs TRNG et pourquoi aucune stratégie ne peut le battre.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/mathematiques-casino/rng-explique",
@@ -50,6 +52,12 @@ const faqItems = [
 export default function RngExpliquePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Le RNG (Générateur de Nombres Aléatoires) Expliqué"
+        description="Comprendre le RNG des casinos en ligne. Fonctionnement technique, certification, impact sur l'équité des jeux, PRNG vs TRNG et pourquoi aucune stratégie ne peut le battre."
+        url="/blog/mathematiques-casino/rng-explique"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -66,7 +74,7 @@ export default function RngExpliquePage() {
         gradient={getThemeStyle("mathematiques-casino").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Le RNG est le coeur invisible de tous les jeux de casino en ligne. Ce système
           détermine chaque résultat, de la position des rouleaux des{" "}
@@ -385,6 +393,8 @@ export default function RngExpliquePage() {
       </article>
 
       <FAQ items={faqItems} id="faq-rng" />
+
+      <ArticleCTA />
     </div>
   );
 }

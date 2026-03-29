@@ -5,9 +5,9 @@ import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
 
 export const metadata: Metadata = {
-  title: "Machines à Sous : RTP, Volatilité et Stratégies",
+  title: "Machines à Sous : Guide Complet",
   description:
-    "Guide complet des machines à sous en ligne : comprendre le RTP, la volatilité, les paylines, les bonus features et les jackpots progressifs. Conseils pour choisir les meilleures slots.",
+    "Guide des machines à sous : comprendre le RTP, la volatilité, les paylines, les bonus features et les jackpots progressifs.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/jeux/machines-a-sous",
   },

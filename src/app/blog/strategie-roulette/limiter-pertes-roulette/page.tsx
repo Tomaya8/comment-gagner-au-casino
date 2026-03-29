@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Techniques pour Limiter les Pertes à la Roulette",
+  title: "Limiter ses Pertes à la Roulette",
   description:
-    "Découvrez les techniques efficaces pour limiter vos pertes à la roulette. Gestion de bankroll, choix de la variante, limites de session et discipline de jeu pour un divertissement responsable.",
+    "Techniques pour limiter vos pertes à la roulette. Gestion de bankroll, choix de la variante, limites de session et discipline de jeu.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/strategie-roulette/limiter-pertes-roulette",
@@ -50,6 +52,12 @@ const faqItems = [
 export default function LimiterPertesRoulettePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Techniques pour Limiter les Pertes à la Roulette"
+        description="Découvrez les techniques efficaces pour limiter vos pertes à la roulette. Gestion de bankroll, choix de la variante, limites de session et discipline de jeu pour un divertissement responsable."
+        url="/blog/strategie-roulette/limiter-pertes-roulette"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -66,7 +74,7 @@ export default function LimiterPertesRoulettePage() {
         gradient={getThemeStyle("strategie-roulette").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Personne ne peut battre la roulette à long terme. L&apos;
           <Link href="/blog/mathematiques-casino/avantage-maison">avantage de la maison</Link>{" "}
@@ -364,6 +372,8 @@ export default function LimiterPertesRoulettePage() {
       </article>
 
       <FAQ items={faqItems} id="faq-limiter-pertes" />
+
+      <ArticleCTA />
     </div>
   );
 }

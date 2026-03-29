@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Les Biais Cognitifs du Joueur de Casino : Guide Complet",
+  title: "Biais Cognitifs du Joueur",
   description:
-    "Identifiez les biais cognitifs qui vous font perdre au casino. Sophisme du joueur, illusion de contrôle, aversion à la perte, biais de confirmation et 8 autres pièges mentaux analysés.",
+    "Les biais cognitifs qui font perdre au casino : sophisme du joueur, illusion de contrôle, aversion à la perte et autres pièges mentaux.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/psychologie-joueur/biais-cognitifs",
@@ -45,6 +47,12 @@ const faqItems = [
 export default function BiaisCognitifsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Les Biais Cognitifs du Joueur de Casino : Guide Complet"
+        description="Identifiez les biais cognitifs qui vous font perdre au casino. Sophisme du joueur, illusion de contrôle, aversion à la perte, biais de confirmation et 8 autres pièges mentaux analysés."
+        url="/blog/psychologie-joueur/biais-cognitifs"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -61,7 +69,7 @@ export default function BiaisCognitifsPage() {
         gradient={getThemeStyle("psychologie-joueur").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Notre cerveau n&apos;a pas été conçu pour évaluer correctement les probabilités.
           Les biais cognitifs, ces raccourcis mentaux automatiques, nous jouent des tours dans
@@ -312,6 +320,8 @@ export default function BiaisCognitifsPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-biais-cognitifs" />
+
+      <ArticleCTA />
     </div>
   );
 }

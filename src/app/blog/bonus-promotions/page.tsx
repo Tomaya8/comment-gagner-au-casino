@@ -8,7 +8,7 @@ const theme = "bonus-promotions";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Bonus & Promotions Casino : Guides et Optimisation",
+  title: "Bonus Casino : Guides et Astuces",
   description:
     "Comprendre et optimiser les bonus de casino : bonus sans dépôt, conditions de wagering et stratégies pour maximiser vos avantages.",
   alternates: {

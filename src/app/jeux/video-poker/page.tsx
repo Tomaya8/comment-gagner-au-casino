@@ -5,9 +5,9 @@ import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
 
 export const metadata: Metadata = {
-  title: "Vidéo Poker : Variantes, Tableaux de Paiement et Stratégie Optimale",
+  title: "Vidéo Poker : Stratégie et RTP",
   description:
-    "Guide complet du vidéo poker : Jacks or Better, Deuces Wild, tableaux de paiement, stratégie optimale, RTP et conseils pour atteindre un taux de redistribution supérieur à 99%.",
+    "Guide du vidéo poker : Jacks or Better, Deuces Wild, tableaux de paiement, stratégie optimale et RTP supérieur à 99 %.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/jeux/video-poker",
   },

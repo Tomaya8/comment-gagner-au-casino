@@ -4,9 +4,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Pragmatic Play – Avis, Meilleurs Jeux et RTP du Fournisseur",
+  title: "Pragmatic Play : Avis, Jeux et RTP",
   description:
-    "Guide complet sur Pragmatic Play : histoire, catalogue de 300+ jeux, RTP moyen de 96,5 %, slots phares (Gates of Olympus, Sweet Bonanza, The Dog House). Analyse détaillée.",
+    "Guide Pragmatic Play : 300+ jeux, RTP moyen de 96,5 %, slots phares (Gates of Olympus, Sweet Bonanza, The Dog House). Analyse détaillée.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/fournisseurs/pragmatic-play",

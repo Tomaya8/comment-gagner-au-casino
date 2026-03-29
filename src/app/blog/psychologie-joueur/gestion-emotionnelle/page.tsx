@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Gestion Émotionnelle au Casino : Guide Pratique",
+  title: "Gestion Émotionnelle au Casino",
   description:
-    "Maîtrisez vos émotions au casino avec ce guide pratique. Techniques pour gérer le tilt, la frustration, l'euphorie et la pression. Protocoles concrets pour jouer avec lucidité.",
+    "Maîtrisez vos émotions au casino : techniques pour gérer le tilt, la frustration, l'euphorie et la pression. Jouez avec lucidité.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/psychologie-joueur/gestion-emotionnelle",
@@ -50,6 +52,12 @@ const faqItems = [
 export default function GestionEmotionnellePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Gestion Émotionnelle au Casino : Guide Pratique"
+        description="Maîtrisez vos émotions au casino avec ce guide pratique. Techniques pour gérer le tilt, la frustration, l'euphorie et la pression. Protocoles concrets pour jouer avec lucidité."
+        url="/blog/psychologie-joueur/gestion-emotionnelle"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -66,7 +74,7 @@ export default function GestionEmotionnellePage() {
         gradient={getThemeStyle("psychologie-joueur").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Connaître la{" "}
           <Link href="/blog/strategie-blackjack/strategie-de-base">stratégie de base</Link>{" "}
@@ -328,6 +336,8 @@ export default function GestionEmotionnellePage() {
       </article>
 
       <FAQ items={faqItems} id="faq-gestion-emotionnelle" />
+
+      <ArticleCTA />
     </div>
   );
 }

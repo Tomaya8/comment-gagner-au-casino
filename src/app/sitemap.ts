@@ -2,15 +2,18 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://comment-gagner-au-casino.com";
-  const now = new Date();
+
+  const homepageDate = new Date("2026-03-29");
+  const gameDate = new Date("2026-01-10");
+  const articleDate = new Date("2026-01-15");
 
   const staticPages = [
-    { url: baseUrl, changeFrequency: "weekly" as const, priority: 1.0 },
-    { url: `${baseUrl}/jeux`, changeFrequency: "monthly" as const, priority: 0.9 },
-    { url: `${baseUrl}/strategies`, changeFrequency: "monthly" as const, priority: 0.9 },
-    { url: `${baseUrl}/fournisseurs`, changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${baseUrl}/casinos-en-ligne`, changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${baseUrl}/blog`, changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: baseUrl, changeFrequency: "weekly" as const, priority: 1.0, lastModified: homepageDate },
+    { url: `${baseUrl}/jeux`, changeFrequency: "monthly" as const, priority: 0.9, lastModified: homepageDate },
+    { url: `${baseUrl}/strategies`, changeFrequency: "monthly" as const, priority: 0.9, lastModified: homepageDate },
+    { url: `${baseUrl}/fournisseurs`, changeFrequency: "monthly" as const, priority: 0.8, lastModified: homepageDate },
+    { url: `${baseUrl}/casinos-en-ligne`, changeFrequency: "weekly" as const, priority: 0.9, lastModified: homepageDate },
+    { url: `${baseUrl}/blog`, changeFrequency: "weekly" as const, priority: 0.8, lastModified: homepageDate },
   ];
 
   const gamePages = [
@@ -23,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/jeux/${slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.9,
+    lastModified: gameDate,
   }));
 
   const providerPages = [
@@ -35,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/fournisseurs/${slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.7,
+    lastModified: articleDate,
   }));
 
   const blogCategories = [
@@ -52,6 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/blog/${slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.75,
+    lastModified: articleDate,
   }));
 
   const blogArticles = [
@@ -89,9 +95,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/blog/${slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.7,
+    lastModified: articleDate,
   }));
 
-  return [...staticPages, ...gamePages, ...providerPages, ...blogCategories, ...blogArticles].map(
-    (page) => ({ ...page, lastModified: now })
-  );
+  return [...staticPages, ...gamePages, ...providerPages, ...blogCategories, ...blogArticles];
 }

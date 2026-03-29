@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Peut-on Réellement Gagner aux Machines à Sous ?",
+  title: "Gagner aux Machines à Sous ?",
   description:
-    "Analyse honnête des chances de gagner aux machines à sous. RTP, volatilité, jackpots progressifs, RNG et espérance mathématique. Tout ce que vous devez savoir avant de jouer.",
+    "Chances réelles de gagner aux machines à sous : RTP, volatilité, jackpots progressifs, RNG et espérance mathématique expliqués.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/machines-a-sous/peut-on-gagner-aux-slots",
@@ -50,6 +52,12 @@ const faqItems = [
 export default function PeutOnGagnerAuxSlotsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Peut-on Réellement Gagner aux Machines à Sous ?"
+        description="Analyse honnête des chances de gagner aux machines à sous. RTP, volatilité, jackpots progressifs, RNG et espérance mathématique. Tout ce que vous devez savoir avant de jouer."
+        url="/blog/machines-a-sous/peut-on-gagner-aux-slots"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -66,7 +74,7 @@ export default function PeutOnGagnerAuxSlotsPage() {
         gradient={getThemeStyle("machines-a-sous").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Les machines à sous sont les jeux de casino les plus populaires au monde. Elles
           génèrent plus de revenus que tous les jeux de table combinés. Mais peut-on
@@ -301,6 +309,8 @@ export default function PeutOnGagnerAuxSlotsPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-gagner-slots" />
+
+      <ArticleCTA />
     </div>
   );
 }

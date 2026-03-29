@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Les Erreurs les Plus Fréquentes au Blackjack",
+  title: "Erreurs Fréquentes au Blackjack",
   description:
-    "Identifiez et corrigez les erreurs les plus coûteuses au blackjack. Assurance, split de 10, peur du bust, gestion de bankroll et biais psychologiques qui augmentent l'avantage de la maison.",
+    "Les erreurs les plus coûteuses au blackjack : assurance, split de 10, peur du bust et biais psychologiques qui augmentent l'avantage maison.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/strategie-blackjack/erreurs-frequentes",
@@ -45,6 +47,12 @@ const faqItems = [
 export default function ErreursFrequentesPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Les Erreurs les Plus Fréquentes au Blackjack"
+        description="Identifiez et corrigez les erreurs les plus coûteuses au blackjack. Assurance, split de 10, peur du bust, gestion de bankroll et biais psychologiques qui augmentent l'avantage de la maison."
+        url="/blog/strategie-blackjack/erreurs-frequentes"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -61,7 +69,7 @@ export default function ErreursFrequentesPage() {
         gradient={getThemeStyle("strategie-blackjack").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Même les joueurs réguliers de{" "}
           <Link href="/jeux/blackjack">blackjack</Link> commettent des erreurs qui augmentent
@@ -315,6 +323,8 @@ export default function ErreursFrequentesPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-erreurs-blackjack" />
+
+      <ArticleCTA />
     </div>
   );
 }

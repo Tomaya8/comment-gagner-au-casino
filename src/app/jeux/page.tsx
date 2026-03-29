@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Jeux de Casino : Guides Complets et Stratégies",
+  title: "Jeux de Casino : Guides et RTP",
   description:
-    "Découvrez tous les jeux de casino en ligne : roulette, blackjack, machines à sous, baccarat et vidéo poker. Règles, probabilités, RTP et stratégies détaillées.",
+    "Tous les jeux de casino : roulette, blackjack, machines à sous, baccarat et vidéo poker. Règles, probabilités, RTP et stratégies.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/jeux",
   },

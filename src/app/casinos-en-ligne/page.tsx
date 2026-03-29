@@ -5,9 +5,9 @@ import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
 
 export const metadata: Metadata = {
-  title: "Casinos en Ligne : Guide Complet pour les Joueurs Français",
+  title: "Casinos en Ligne : Guide France",
   description:
-    "Guide complet des casinos en ligne en France : comment choisir, licences, bonus, méthodes de paiement, jeux disponibles et conseils pour jouer en toute sécurité.",
+    "Guide des casinos en ligne en France : comment choisir, licences, bonus, méthodes de paiement et conseils pour jouer en sécurité.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/casinos-en-ligne",
   },

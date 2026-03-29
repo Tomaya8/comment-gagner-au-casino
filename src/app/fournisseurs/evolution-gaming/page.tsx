@@ -4,9 +4,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Evolution Gaming – Avis, Meilleurs Jeux et RTP du Fournisseur",
+  title: "Evolution Gaming : Avis et RTP",
   description:
-    "Guide complet sur Evolution Gaming : leader du casino en direct, histoire, jeux phares (Crazy Time, Lightning Roulette, Monopoly Live), RTP, innovations et game shows télévisés.",
+    "Guide Evolution Gaming : leader du casino en direct, jeux phares (Crazy Time, Lightning Roulette, Monopoly Live), RTP et innovations.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/fournisseurs/evolution-gaming",

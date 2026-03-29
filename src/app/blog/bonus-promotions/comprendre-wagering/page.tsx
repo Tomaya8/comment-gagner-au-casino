@@ -3,9 +3,11 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Comprendre le Wagering (Conditions de Mise)",
+  title: "Comprendre le Wagering Casino",
   description:
     "Explication complète du wagering au casino en ligne. Comment calculer les conditions de mise, évaluer un bonus et éviter les pieges des offres promotionnelles.",
   alternates: {
@@ -49,6 +51,12 @@ const faqItems = [
 export default function ComprendreWagering() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Comprendre le Wagering (Conditions de Mise)"
+        description="Explication complète du wagering au casino en ligne. Comment calculer les conditions de mise, évaluer un bonus et éviter les pieges des offres promotionnelles."
+        url="/blog/bonus-promotions/comprendre-wagering"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -275,6 +283,8 @@ export default function ComprendreWagering() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

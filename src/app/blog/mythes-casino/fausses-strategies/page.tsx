@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Les Fausses Stratégies de Casino a Éviter",
+  title: "Fausses Stratégies de Casino",
   description:
-    "Découvrez les stratégies de casino qui ne fonctionnent pas : martingale, systèmes progressifs, méthodes miracles. Analyse mathematique des mythes les plus repandus.",
+    "Les stratégies de casino qui ne fonctionnent pas : martingale, systèmes progressifs, méthodes miracles. Analyse des mythes les plus répandus.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog/mythes-casino/fausses-strategies",
   },
@@ -44,6 +46,12 @@ const faqItems = [
 export default function FaussesStratégies() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Les Fausses Stratégies de Casino a Éviter"
+        description="Découvrez les stratégies de casino qui ne fonctionnent pas : martingale, systèmes progressifs, méthodes miracles. Analyse mathematique des mythes les plus repandus."
+        url="/blog/mythes-casino/fausses-strategies"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -270,6 +278,8 @@ export default function FaussesStratégies() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

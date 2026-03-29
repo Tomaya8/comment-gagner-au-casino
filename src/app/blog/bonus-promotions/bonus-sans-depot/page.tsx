@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Bonus Sans Dépôt : Guide Complet",
+  title: "Bonus Sans Dépôt Casino",
   description:
-    "Tout savoir sur les bonus sans dépôt de casino en ligne. Comment les obtenir, conditions de mise, avantages et pieges a éviter. Guide complet pour joueurs français.",
+    "Les bonus sans dépôt de casino en ligne : comment les obtenir, conditions de mise, avantages et pièges à éviter pour joueurs français.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog/bonus-promotions/bonus-sans-depot",
   },
@@ -49,6 +51,12 @@ const faqItems = [
 export default function BonusSansDépôt() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Bonus Sans Dépôt : Guide Complet"
+        description="Tout savoir sur les bonus sans dépôt de casino en ligne. Comment les obtenir, conditions de mise, avantages et pieges a éviter. Guide complet pour joueurs français."
+        url="/blog/bonus-promotions/bonus-sans-depot"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -243,6 +251,8 @@ export default function BonusSansDépôt() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

@@ -4,11 +4,13 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Les Meilleurs Casinos en Ligne en France",
+  title: "Meilleurs Casinos en France",
   description:
-    "Comparatif des meilleurs casinos en ligne pour les joueurs français. Bonus, RTP, retraits, licences et avis : notre sélection des casinos les plus fiables en 2025.",
+    "Comparatif des meilleurs casinos en ligne pour les joueurs français. Bonus, RTP, retraits, licences et avis : notre sélection 2026.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/blog/comparatifs/meilleurs-casinos-france",
   },
@@ -45,6 +47,12 @@ const faqItems = [
 export default function MeilleursCasinosFrance() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Les Meilleurs Casinos en Ligne en France"
+        description="Comparatif des meilleurs casinos en ligne pour les joueurs français. Bonus, RTP, retraits, licences et avis : notre sélection 2026."
+        url="/blog/comparatifs/meilleurs-casinos-france"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -200,6 +208,8 @@ export default function MeilleursCasinosFrance() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

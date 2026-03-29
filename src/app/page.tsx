@@ -5,9 +5,11 @@ import CasinoTable from "@/components/CasinoTable";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Comment Gagner au Casino : Guide Complet, Stratégies et Astuces 2026",
+  title: {
+    absolute: "Comment Gagner au Casino : Stratégies et Astuces 2026",
+  },
   description:
-    "Découvrez comment gagner au casino grâce à nos stratégies éprouvées. Guide expert sur le RTP, la bankroll, l'avantage maison et les meilleures techniques pour la roulette, le blackjack, les machines à sous et plus encore.",
+    "Stratégies éprouvées pour gagner au casino. Guide expert : RTP, bankroll, avantage maison et techniques pour la roulette, le blackjack et les machines à sous.",
   keywords: [
     "comment gagner au casino",
     "gagner au casino",
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     canonical: "https://comment-gagner-au-casino.com",
   },
   openGraph: {
-    title: "Comment Gagner au Casino : Guide Complet, Stratégies et Astuces 2026",
+    title: "Comment Gagner au Casino : Stratégies et Astuces 2026",
     description:
       "Le guide francophone le plus complet pour maximiser vos chances au casino. Stratégies, RTP, bankroll et conseils d'experts.",
     url: "https://comment-gagner-au-casino.com",
@@ -178,45 +180,43 @@ export default function Home() {
             de jeu :
           </p>
 
-          <div className="card my-6">
-            <div className="overflow-x-auto">
-            <table className="w-full text-left">
+          <div className="overflow-x-auto my-6">
+            <table>
               <thead>
-                <tr className="border-b border-border">
-                  <th className="py-2 pr-4">Jeu</th>
-                  <th className="py-2 pr-4">RTP moyen</th>
-                  <th className="py-2">Avantage maison</th>
+                <tr>
+                  <th>Jeu</th>
+                  <th>RTP moyen</th>
+                  <th>Avantage maison</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-border/50">
-                  <td className="py-2 pr-4"><Link href="/jeux/blackjack" className="text-gold hover:underline">Blackjack (stratégie de base)</Link></td>
-                  <td className="py-2 pr-4">99,5 %</td>
-                  <td className="py-2">0,5 %</td>
-                </tr>
-                <tr className="border-b border-border/50">
-                  <td className="py-2 pr-4"><Link href="/jeux/video-poker" className="text-gold hover:underline">Vidéo Poker (Jacks or Better)</Link></td>
-                  <td className="py-2 pr-4">99,54 %</td>
-                  <td className="py-2">0,46 %</td>
-                </tr>
-                <tr className="border-b border-border/50">
-                  <td className="py-2 pr-4"><Link href="/jeux/baccarat" className="text-gold hover:underline">Baccarat (mise banquier)</Link></td>
-                  <td className="py-2 pr-4">98,94 %</td>
-                  <td className="py-2">1,06 %</td>
-                </tr>
-                <tr className="border-b border-border/50">
-                  <td className="py-2 pr-4"><Link href="/jeux/roulette" className="text-gold hover:underline">Roulette européenne</Link></td>
-                  <td className="py-2 pr-4">97,30 %</td>
-                  <td className="py-2">2,70 %</td>
+                <tr>
+                  <td><Link href="/jeux/blackjack" className="text-gold hover:underline">Blackjack (stratégie de base)</Link></td>
+                  <td>99,5 %</td>
+                  <td>0,5 %</td>
                 </tr>
                 <tr>
-                  <td className="py-2 pr-4"><Link href="/jeux/machines-a-sous" className="text-gold hover:underline">Machines à sous</Link></td>
-                  <td className="py-2 pr-4">92 – 98 %</td>
-                  <td className="py-2">2 – 8 %</td>
+                  <td><Link href="/jeux/video-poker" className="text-gold hover:underline">Vidéo Poker (Jacks or Better)</Link></td>
+                  <td>99,54 %</td>
+                  <td>0,46 %</td>
+                </tr>
+                <tr>
+                  <td><Link href="/jeux/baccarat" className="text-gold hover:underline">Baccarat (mise banquier)</Link></td>
+                  <td>98,94 %</td>
+                  <td>1,06 %</td>
+                </tr>
+                <tr>
+                  <td><Link href="/jeux/roulette" className="text-gold hover:underline">Roulette européenne</Link></td>
+                  <td>97,30 %</td>
+                  <td>2,70 %</td>
+                </tr>
+                <tr>
+                  <td><Link href="/jeux/machines-a-sous" className="text-gold hover:underline">Machines à sous</Link></td>
+                  <td>92 – 98 %</td>
+                  <td>2 – 8 %</td>
                 </tr>
               </tbody>
             </table>
-            </div>
           </div>
 
           <p>

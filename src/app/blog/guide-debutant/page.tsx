@@ -8,7 +8,7 @@ const theme = "guide-débutant";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Guides Débutants Casino : Par Où Commencer ?",
+  title: "Guide Débutant Casino",
   description:
     "Guides complets pour débuter au casino : premiers pas, choix des jeux faciles et définition du budget initial. Tout pour bien commencer.",
   alternates: {

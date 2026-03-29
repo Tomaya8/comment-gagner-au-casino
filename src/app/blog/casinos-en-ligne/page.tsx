@@ -8,7 +8,7 @@ const theme = "casinos-en-ligne";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Casinos en Ligne : Guides pour Choisir et Jouer en Sécurité",
+  title: "Casinos en Ligne : Guides",
   description:
     "Guides pour choisir un casino en ligne fiable : licences, méthodes de paiement et critères de sécurité. Jouez en toute confiance.",
   alternates: {

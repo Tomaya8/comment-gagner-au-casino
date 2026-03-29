@@ -3,9 +3,11 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Quel Budget pour Commencer au Casino ?",
+  title: "Budget Casino : Par Où Commencer",
   description:
     "Guide pratique pour definir votre budget casino. Combien investir pour débuter, comment gérer sa bankroll et éviter les pieges financiers au casino en ligne.",
   alternates: {
@@ -44,6 +46,12 @@ const faqItems = [
 export default function BudgetInitialCasino() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Quel Budget pour Commencer au Casino ?"
+        description="Guide pratique pour definir votre budget casino. Combien investir pour débuter, comment gérer sa bankroll et éviter les pieges financiers au casino en ligne."
+        url="/blog/guide-debutant/budget-initial-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -320,6 +328,8 @@ export default function BudgetInitialCasino() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

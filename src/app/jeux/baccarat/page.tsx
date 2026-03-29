@@ -5,9 +5,9 @@ import FAQ from "@/components/FAQ";
 import CasinoTable from "@/components/CasinoTable";
 
 export const metadata: Metadata = {
-  title: "Baccarat : Règles, Probabilités et Stratégies du Joueur",
+  title: "Baccarat : Règles et Stratégies",
   description:
-    "Guide complet du baccarat : Banco vs Punto, règle de la troisième carte, commissions, avantage maison et stratégies. Tout pour comprendre ce jeu au RTP exceptionnel.",
+    "Guide du baccarat : Banco vs Punto, règle de la troisième carte, commissions, avantage maison et stratégies pour ce jeu au RTP exceptionnel.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/jeux/baccarat",
   },

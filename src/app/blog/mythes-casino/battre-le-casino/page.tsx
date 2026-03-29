@@ -3,9 +3,11 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Peut-on Réellement Battre le Casino ?",
+  title: "Peut-on Battre le Casino ?",
   description:
     "Analyse honnete et mathematique : peut-on vraiment battre le casino ? Avantage maison, comptage de cartes, stratégies et réalités du jeu de casino expliques.",
   alternates: {
@@ -49,6 +51,12 @@ const faqItems = [
 export default function BattreLeCasino() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Peut-on Réellement Battre le Casino ?"
+        description="Analyse honnete et mathematique : peut-on vraiment battre le casino ? Avantage maison, comptage de cartes, stratégies et réalités du jeu de casino expliques."
+        url="/blog/mythes-casino/battre-le-casino"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -276,6 +284,8 @@ export default function BattreLeCasino() {
       </article>
 
       <FAQ items={faqItems} id="faq" />
+
+      <ArticleCTA />
     </div>
   );
 }

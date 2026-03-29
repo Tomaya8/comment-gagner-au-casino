@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Fournisseurs de Jeux de Casino en Ligne – Guide Complet",
+  title: "Fournisseurs de Jeux de Casino",
   description:
-    "Découvrez les meilleurs fournisseurs de logiciels de casino : NetEnt, Microgaming, Pragmatic Play, Play'n GO et Evolution Gaming. Comparatif, jeux phares et innovations.",
+    "Les meilleurs fournisseurs de casino : NetEnt, Microgaming, Pragmatic Play, Play'n GO et Evolution Gaming. Comparatif et jeux phares.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/fournisseurs",
   },

@@ -8,7 +8,7 @@ const theme = "strategie-roulette";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Stratégies Roulette : Guides et Analyses Mathématiques",
+  title: "Stratégies Roulette : Guides",
   description:
     "Découvrez nos analyses complètes des stratégies de roulette : martingale, mises rouge/noir, gestion des pertes. Approche mathématique et honnête.",
   alternates: {

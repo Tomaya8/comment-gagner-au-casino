@@ -8,7 +8,7 @@ const theme = "comparatifs";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Comparatifs Casino : Classements Objectifs des Meilleurs Sites",
+  title: "Comparatifs Casino en Ligne",
   description:
     "Comparatifs objectifs des meilleurs casinos en ligne : classement par fiabilité, rapidité des retraits et taux de redistribution (RTP).",
   alternates: {

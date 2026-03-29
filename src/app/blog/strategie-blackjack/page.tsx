@@ -8,7 +8,7 @@ const theme = "strategie-blackjack";
 const style = getThemeStyle(theme);
 
 export const metadata: Metadata = {
-  title: "Stratégies Blackjack : Stratégie de Base et Comptage",
+  title: "Stratégies Blackjack : Guides",
   description:
     "Maîtrisez le blackjack avec nos guides complets : stratégie de base, comptage de cartes, erreurs à éviter. Devenez un joueur éclairé.",
   alternates: {

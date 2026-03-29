@@ -48,7 +48,29 @@ export default function CasinoTable() {
   return (
     <section className="my-12">
       <h2 className="text-2xl font-bold text-gold mb-6"><span aria-hidden="true">🏆</span> Top Casinos Recommandés en France</h2>
-      <div className="overflow-x-auto relative">
+
+      {/* Mobile: stacked cards */}
+      <div className="flex flex-col gap-4 md:hidden">
+        {topCasinos.map((casino, i) => (
+          <div key={i} className="card p-4">
+            <p className="text-lg font-bold mb-1">{casino.name}</p>
+            <p className="text-gold-light font-semibold mb-2">{casino.bonus}</p>
+            <div className="flex items-center justify-between text-sm mb-3">
+              <span>RTP: {casino.rtp}</span>
+              <span>{casino.rating}</span>
+            </div>
+            <div className="flex flex-wrap gap-1 mb-4">
+              {casino.features.map((f, j) => (
+                <span key={j} className="text-xs bg-card-bg px-2 py-0.5 rounded">{f}</span>
+              ))}
+            </div>
+            <a href="#" rel="nofollow noopener" target="_blank" className="btn-cta block w-full text-center !py-3">Jouer →</a>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop: full table */}
+      <div className="hidden md:block overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
             <tr className="bg-card-bg">
@@ -56,7 +78,7 @@ export default function CasinoTable() {
               <th className="p-3 text-left text-gold border border-card-border">Bonus</th>
               <th className="p-3 text-center text-gold border border-card-border">RTP moyen</th>
               <th className="p-3 text-center text-gold border border-card-border">Note</th>
-              <th className="p-3 text-left text-gold border border-card-border hidden md:table-cell">Avantages</th>
+              <th className="p-3 text-left text-gold border border-card-border">Avantages</th>
               <th className="p-3 text-center text-gold border border-card-border">Action</th>
             </tr>
           </thead>
@@ -67,7 +89,7 @@ export default function CasinoTable() {
                 <td className="p-3 text-gold-light border border-card-border">{casino.bonus}</td>
                 <td className="p-3 text-center border border-card-border">{casino.rtp}</td>
                 <td className="p-3 text-center border border-card-border">{casino.rating}</td>
-                <td className="p-3 border border-card-border hidden md:table-cell">
+                <td className="p-3 border border-card-border">
                   <div className="flex flex-wrap gap-1">
                     {casino.features.map((f, j) => (
                       <span key={j} className="text-xs bg-card-bg px-2 py-0.5 rounded">{f}</span>
@@ -81,8 +103,8 @@ export default function CasinoTable() {
             ))}
           </tbody>
         </table>
-        <div className="absolute top-0 right-0 bottom-0 w-8 bg-gradient-to-l from-card-bg to-transparent pointer-events-none md:hidden" />
       </div>
+
       <p className="text-xs text-muted mt-3">
         <span aria-hidden="true">🔞</span> 18+ | Conditions de bonus applicables. Jouez de manière responsable.
       </p>

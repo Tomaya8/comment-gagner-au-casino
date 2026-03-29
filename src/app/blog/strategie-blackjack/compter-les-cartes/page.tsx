@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "Compter les Cartes au Blackjack : Réalité vs Fiction",
+  title: "Comptage de Cartes au Blackjack",
   description:
-    "La vérité sur le comptage de cartes au blackjack. Comment ça fonctionne, le système Hi-Lo, légalité, efficacité réelle et pourquoi c'est impossible en ligne. Analyse honnête et complète.",
+    "Le comptage de cartes au blackjack : système Hi-Lo, légalité, efficacité réelle et pourquoi c'est impossible en ligne. Analyse honnête.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/strategie-blackjack/compter-les-cartes",
@@ -45,6 +47,12 @@ const faqItems = [
 export default function CompterLesCartesPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="Compter les Cartes au Blackjack : Réalité vs Fiction"
+        description="La vérité sur le comptage de cartes au blackjack. Comment ça fonctionne, le système Hi-Lo, légalité, efficacité réelle et pourquoi c'est impossible en ligne. Analyse honnête et complète."
+        url="/blog/strategie-blackjack/compter-les-cartes"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -61,7 +69,7 @@ export default function CompterLesCartesPage() {
         gradient={getThemeStyle("strategie-blackjack").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Le comptage de cartes est entouré d&apos;un mythe hollywoodien qui en fait une
           technique quasi magique permettant de battre le casino. La réalité est bien
@@ -291,6 +299,8 @@ export default function CompterLesCartesPage() {
       </article>
 
       <FAQ items={faqItems} id="faq-comptage-cartes" />
+
+      <ArticleCTA />
     </div>
   );
 }

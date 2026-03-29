@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Stratégies de Casino : Guides et Conseils d'Experts",
+  title: "Stratégies Casino : Nos Guides",
   description:
-    "Toutes les stratégies de casino expliquées : roulette, blackjack, machines à sous, bankroll management, mathématiques et psychologie du joueur. Guides détaillés par des experts.",
+    "Stratégies de casino : roulette, blackjack, machines à sous, bankroll, mathématiques et psychologie du joueur. Guides détaillés par des experts.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/strategies",
   },

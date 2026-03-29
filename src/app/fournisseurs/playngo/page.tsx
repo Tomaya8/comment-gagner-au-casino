@@ -4,9 +4,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Play'n GO – Avis, Meilleurs Jeux et RTP du Fournisseur",
+  title: "Play'n GO : Avis, Jeux et RTP",
   description:
-    "Guide complet sur Play'n GO : histoire, catalogue de 350+ jeux, RTP moyen de 96,2 %, meilleures slots (Book of Dead, Reactoonz, Rise of Olympus). Forces, faiblesses et innovations.",
+    "Guide Play'n GO : 350+ jeux, RTP moyen de 96,2 %, meilleures slots (Book of Dead, Reactoonz, Rise of Olympus). Forces et faiblesses.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/fournisseurs/playngo",
   },

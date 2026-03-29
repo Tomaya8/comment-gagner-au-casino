@@ -3,11 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogHero, { getThemeStyle } from "@/components/BlogHero";
 import FAQ from "@/components/FAQ";
+import ArticleSchema from "@/components/ArticleSchema";
+import ArticleCTA from "@/components/ArticleCTA";
 
 export const metadata: Metadata = {
-  title: "RTP et Volatilité : Tout Comprendre sur les Machines à Sous",
+  title: "RTP et Volatilité des Slots",
   description:
-    "Explication complète du RTP (Return to Player) et de la volatilité des machines à sous. Comment ces indicateurs influencent vos sessions de jeu et comment choisir la bonne machine.",
+    "Explication du RTP et de la volatilité des machines à sous. Comment ces indicateurs influencent vos sessions et comment choisir la bonne machine.",
   alternates: {
     canonical:
       "https://comment-gagner-au-casino.com/blog/machines-a-sous/rtp-volatilite-expliques",
@@ -50,6 +52,12 @@ const faqItems = [
 export default function RtpVolatilitePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        title="RTP et Volatilité : Tout Comprendre sur les Machines à Sous"
+        description="Explication complète du RTP (Return to Player) et de la volatilité des machines à sous. Comment ces indicateurs influencent vos sessions de jeu et comment choisir la bonne machine."
+        url="/blog/machines-a-sous/rtp-volatilite-expliques"
+        datePublished="2026-01-15"
+      />
       <Breadcrumb
         items={[
           { label: "Accueil", href: "/" },
@@ -66,7 +74,7 @@ export default function RtpVolatilitePage() {
         gradient={getThemeStyle("machines-a-sous").gradient}
       />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none">
         <p className="lead text-xl text-muted">
           Le RTP et la volatilité sont les deux indicateurs fondamentaux pour comprendre et
           choisir une machine à sous. Pourtant, la plupart des joueurs les ignorent ou les
@@ -327,6 +335,8 @@ export default function RtpVolatilitePage() {
       </article>
 
       <FAQ items={faqItems} id="faq-rtp-volatilite" />
+
+      <ArticleCTA />
     </div>
   );
 }
