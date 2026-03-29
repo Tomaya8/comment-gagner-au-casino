@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Fournisseurs de Jeux de Casino",
   description:
-    "Les meilleurs fournisseurs de casino : NetEnt, Microgaming, Pragmatic Play, Play'n GO et Evolution Gaming. Comparatif et jeux phares.",
+    "Les meilleurs fournisseurs de casino : NetEnt, Pragmatic Play, Evolution, BTG, Red Tiger, Yggdrasil, Nolimit City. Comparatif et jeux phares.",
   alternates: {
     canonical: "https://comment-gagner-au-casino.com/fournisseurs",
   },
@@ -56,6 +56,42 @@ const providers = [
     founded: "2006",
     headquarters: "Riga, Lettonie",
     games: "400+",
+  },
+  {
+    slug: "big-time-gaming",
+    name: "Big Time Gaming",
+    description:
+      "Inventeur de la mécanique Megaways offrant jusqu'à 117 649 façons de gagner, Big Time Gaming a révolutionné les machines à sous avec des slots à haute volatilité et un potentiel de gains massifs.",
+    founded: "2011",
+    headquarters: "Sydney, Australie",
+    games: "50+",
+  },
+  {
+    slug: "red-tiger",
+    name: "Red Tiger Gaming",
+    description:
+      "Créateur du système Daily Jackpots unique, Red Tiger Gaming séduit par ses animations fluides, ses gains réguliers et un catalogue de plus de 200 slots aux thèmes variés.",
+    founded: "2014",
+    headquarters: "Île de Man",
+    games: "200+",
+  },
+  {
+    slug: "yggdrasil",
+    name: "Yggdrasil Gaming",
+    description:
+      "Studio maltais réputé pour ses graphismes 3D spectaculaires et sa technologie GATI, Yggdrasil repousse les limites visuelles du casino en ligne avec des créations artistiques uniques.",
+    founded: "2013",
+    headquarters: "Malte",
+    games: "150+",
+  },
+  {
+    slug: "nolimit-city",
+    name: "Nolimit City",
+    description:
+      "L'enfant terrible du casino en ligne, Nolimit City propose des slots à volatilité extrême avec ses xMechanics exclusives et des potentiels de gains atteignant 150 000x la mise.",
+    founded: "2014",
+    headquarters: "Malte / Stockholm",
+    games: "60+",
   },
 ];
 
@@ -119,7 +155,7 @@ export default function FournisseursPage() {
         <h2>Les principaux éditeurs de jeux de casino</h2>
 
         <p>
-          Nous avons analysé en détail les cinq fournisseurs les plus influents
+          Nous avons analysé en détail les neuf fournisseurs les plus influents
           du marché. Chacun d&apos;entre eux a façonné l&apos;industrie du casino en ligne
           à sa manière. Cliquez sur un éditeur pour découvrir son histoire, ses
           jeux phares, ses forces et ses faiblesses.

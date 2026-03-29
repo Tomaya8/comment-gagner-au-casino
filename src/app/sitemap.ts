@@ -29,12 +29,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: gameDate,
   }));
 
+  const slotPages = [
+    "starburst",
+    "book-of-dead",
+    "gates-of-olympus",
+    "sweet-bonanza",
+    "mega-moolah",
+    "crazy-time",
+    "lightning-roulette",
+    "gonzos-quest",
+    "reactoonz",
+    "dead-or-alive-2",
+  ].map((slug) => ({
+    url: `${baseUrl}/jeux/machines-a-sous/${slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+    lastModified: homepageDate,
+  }));
+
+  const licencePages = [
+    { slug: "", priority: 0.8 },
+    { slug: "/mga", priority: 0.7 },
+    { slug: "/curacao", priority: 0.7 },
+    { slug: "/ukgc", priority: 0.7 },
+    { slug: "/anj", priority: 0.7 },
+    { slug: "/gibraltar", priority: 0.7 },
+  ].map((item) => ({
+    url: `${baseUrl}/licences${item.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: item.priority,
+    lastModified: homepageDate,
+  }));
+
   const providerPages = [
     "netent",
     "microgaming",
     "pragmatic-play",
     "playngo",
     "evolution-gaming",
+    "big-time-gaming",
+    "red-tiger",
+    "yggdrasil",
+    "nolimit-city",
   ].map((slug) => ({
     url: `${baseUrl}/fournisseurs/${slug}`,
     changeFrequency: "monthly" as const,
@@ -116,5 +152,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: articleDate,
   }));
 
-  return [...staticPages, ...gamePages, ...strategyPages, ...providerPages, ...blogCategories, ...blogArticles];
+  return [...staticPages, ...gamePages, ...slotPages, ...strategyPages, ...providerPages, ...licencePages, ...blogCategories, ...blogArticles];
 }

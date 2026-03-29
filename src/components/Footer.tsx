@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0a0a1a] border-t border-card-border mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div>
             <h3 className="text-gold font-bold text-lg mb-4"><span aria-hidden="true">🎰</span> Comment Gagner au Casino</h3>
             <p className="text-muted text-sm leading-relaxed">
@@ -32,6 +32,17 @@ export default function Footer() {
               <li><Link href="/fournisseurs/pragmatic-play" className="text-muted text-sm hover:text-gold py-1.5 inline-block">Pragmatic Play</Link></li>
               <li><Link href="/fournisseurs/playngo" className="text-muted text-sm hover:text-gold py-1.5 inline-block">Play&apos;n GO</Link></li>
               <li><Link href="/fournisseurs/evolution-gaming" className="text-muted text-sm hover:text-gold py-1.5 inline-block">Evolution Gaming</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-gold font-semibold mb-4">Licences</h4>
+            <ul className="space-y-1">
+              <li><Link href="/licences/mga" className="text-muted text-sm hover:text-gold py-1.5 inline-block">MGA (Malte)</Link></li>
+              <li><Link href="/licences/curacao" className="text-muted text-sm hover:text-gold py-1.5 inline-block">Curaçao</Link></li>
+              <li><Link href="/licences/ukgc" className="text-muted text-sm hover:text-gold py-1.5 inline-block">UKGC</Link></li>
+              <li><Link href="/licences/anj" className="text-muted text-sm hover:text-gold py-1.5 inline-block">ANJ (France)</Link></li>
+              <li><Link href="/licences/gibraltar" className="text-muted text-sm hover:text-gold py-1.5 inline-block">Gibraltar</Link></li>
             </ul>
           </div>
 
