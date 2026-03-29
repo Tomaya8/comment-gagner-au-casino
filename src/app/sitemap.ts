@@ -42,6 +42,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: articleDate,
   }));
 
+  const strategyPages = [
+    "roulette",
+    "blackjack",
+    "mathematiques",
+    "guide-debutant",
+    "bonus-promotions",
+    "psychologie",
+    "machines-a-sous",
+    "mythes",
+    "comparatifs",
+    "casinos-en-ligne",
+  ].map((slug) => ({
+    url: `${baseUrl}/strategies/${slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+    lastModified: homepageDate,
+  }));
+
   const blogCategories = [
     "strategie-roulette",
     "strategie-blackjack",
@@ -98,5 +116,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: articleDate,
   }));
 
-  return [...staticPages, ...gamePages, ...providerPages, ...blogCategories, ...blogArticles];
+  return [...staticPages, ...gamePages, ...strategyPages, ...providerPages, ...blogCategories, ...blogArticles];
 }

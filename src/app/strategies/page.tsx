@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const strategyArticles = [
   {
     title: "Stratégie Roulette : Systèmes de Mise et Probabilités",
-    href: "/blog/strategie-roulette",
+    href: "/strategies/roulette",
     description:
       "Analyse complète de la martingale, Fibonacci, Paroli et D'Alembert. Comprendre pourquoi aucun système ne bat l'avantage maison, et comment optimiser vos sessions malgré tout.",
     category: "Roulette",
@@ -22,7 +22,7 @@ const strategyArticles = [
   },
   {
     title: "Stratégie Blackjack : Tableau de Base et Techniques Avancées",
-    href: "/blog/strategie-blackjack",
+    href: "/strategies/blackjack",
     description:
       "La stratégie de base complète en tableaux, les règles de split et double optimales, et la réalité du comptage de cartes en ligne.",
     category: "Blackjack",
@@ -30,7 +30,7 @@ const strategyArticles = [
   },
   {
     title: "Les Mathématiques du Casino Expliquées",
-    href: "/blog/mathematiques-casino",
+    href: "/strategies/mathematiques",
     description:
       "RTP, avantage maison, espérance mathématique, variance et écart-type : tous les concepts mathématiques essentiels pour comprendre comment fonctionne réellement un casino.",
     category: "Fondamentaux",
@@ -38,7 +38,7 @@ const strategyArticles = [
   },
   {
     title: "Guide Complet du Débutant au Casino",
-    href: "/blog/guide-debutant",
+    href: "/strategies/guide-debutant",
     description:
       "Tout ce qu'un nouveau joueur doit savoir avant de miser son premier euro : choix du jeu, gestion de bankroll, pièges à éviter et bonnes pratiques.",
     category: "Débutant",
@@ -46,7 +46,7 @@ const strategyArticles = [
   },
   {
     title: "Bonus et Promotions : Comment en Profiter Intelligemment",
-    href: "/blog/bonus-promotions",
+    href: "/strategies/bonus-promotions",
     description:
       "Décryptage des conditions de mise (wagering), des bonus de bienvenue, des tours gratuits et des programmes VIP. Identifier les offres réellement avantageuses.",
     category: "Bonus",
@@ -54,7 +54,7 @@ const strategyArticles = [
   },
   {
     title: "Psychologie du Joueur : Biais Cognitifs et Discipline",
-    href: "/blog/psychologie-joueur",
+    href: "/strategies/psychologie",
     description:
       "Le biais du joueur, l'illusion de contrôle, le biais de confirmation et l'effet de near miss. Comprendre votre propre psychologie pour jouer de manière responsable.",
     category: "Psychologie",
@@ -62,7 +62,7 @@ const strategyArticles = [
   },
   {
     title: "Machines à Sous : Choisir les Meilleures Slots",
-    href: "/blog/machines-a-sous",
+    href: "/strategies/machines-a-sous",
     description:
       "Comment identifier les machines avec le meilleur RTP, comprendre la volatilité et exploiter les bonus features pour maximiser votre temps de jeu.",
     category: "Slots",
@@ -70,7 +70,7 @@ const strategyArticles = [
   },
   {
     title: "Mythes du Casino : Vérités et Fausses Croyances",
-    href: "/blog/mythes-casino",
+    href: "/strategies/mythes",
     description:
       "Les machines chaudes et froides, les systèmes infaillibles, les croupiers qui contrôlent la bille : démystification des croyances les plus répandues.",
     category: "Culture",
@@ -78,7 +78,7 @@ const strategyArticles = [
   },
   {
     title: "Comparatifs Casinos en Ligne",
-    href: "/blog/comparatifs",
+    href: "/strategies/comparatifs",
     description:
       "Comparaison détaillée des meilleurs casinos en ligne pour les joueurs français : licences, RTP moyens, méthodes de paiement, service client et bonus.",
     category: "Comparatifs",
@@ -86,7 +86,7 @@ const strategyArticles = [
   },
   {
     title: "Casinos en Ligne : Guide de Sécurité",
-    href: "/blog/casinos-en-ligne",
+    href: "/strategies/casinos-en-ligne",
     description:
       "Comment vérifier la licence d'un casino, reconnaître les sites fiables, protéger vos données personnelles et vos transactions financières.",
     category: "Sécurité",
