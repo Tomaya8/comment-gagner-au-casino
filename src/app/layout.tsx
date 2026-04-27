@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import OrganizationSchema from "@/components/OrganizationSchema";
 import "./globals.css";
+import GoogleAnalytics from './GoogleAnalytics';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://comment-gagner-au-casino.com"),
@@ -62,6 +63,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content" className="flex-1">{children}</main>
         <Footer />
+        <GoogleAnalytics />
       </body>
     </html>
   );
